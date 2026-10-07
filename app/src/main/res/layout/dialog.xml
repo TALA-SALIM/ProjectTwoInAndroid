@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/card">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="إضافة مهمة جديدة"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#A87550"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/taskName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:hint="اسم المهمة"
+            android:inputType="text"
+            android:gravity="end" />
+
+        <EditText
+            android:id="@+id/taskCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:hint="التصنيف، مثل Kotlin"
+            android:inputType="text"
+            android:gravity="end"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/taskDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="80dp"
+            android:hint="وصف المهمة"
+            android:inputType="textMultiLine"
+            android:gravity="top|end"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/selectDate"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:text="اختيار التاريخ"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/selectStartTime"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:text="اختيار وقت البداية"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/selectEndTime"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:text="اختيار وقت النهاية"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/saveTask"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/brown"
+            android:text="حفظ المهمة"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/cancelTask"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:text="إلغاء" />
+
+    </LinearLayout>
+
+</ScrollView>
